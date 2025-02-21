@@ -127,73 +127,73 @@
 
                                    
 
-                                    <li class="menu-item "> <a href="https://www.foreign.go.tz/eac">Research <span class="icaret nav-plus fa fa-angle-down"></span></a>
+                                    <li class="menu-item "> <a href="#">Research <span class="icaret nav-plus fa fa-angle-down"></span></a>
                                        <ul class="menu sub-menu">
                                            
-                                          <li><a href="https://www.foreign.go.tz/eac/category/eac-overview" title="EAC Overview">Mechanical</a> </li>
+                                          <li><a href="/mechanical" >Mechanical</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/eac/category/eac-areas-of-cooperation" title="EAC Areas of Cooperation">Contractors</a> </li>
+                                          <li><a href="/constractors" >Contractors</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/eac/category/eac-development-strategies" title="EAC Development Strategies">Service</a> </li>
+                                          <li><a href="/services" >Service</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/eac/category/eac-facts-and-figures" title="EAC Facts and Figures">ICT</a> </li>
+                                          <li><a href="/ict" >ICT</a> </li>
                                           
-                                       
+                  
                                        </ul>
                                     </li>
 
                                     <li class="menu-item "> <a href="#"> Innovation <span class="icaret nav-plus fa fa-angle-down"></span></a>
                                        <ul class="menu sub-menu">
                                            
-                                          <li><a href="/innovation" title="News and Events">Innovation Lab (Design studio Lab)</a> </li>
+                                          <li><a href="/innovation" >Innovation Lab (Design studio Lab)</a> </li>
                                            
-                                          <li><a href="/cng" title="Press Release">Compressed Natural Gas Factory (CNG)</a> </li>
+                                          <li><a href="/cng" >Compressed Natural Gas Factory (CNG)</a> </li>
                                            
-                                          <li><a href="/robot" title="Statements and Speech">Robotics Lab (Mechatronics)</a> </li>
+                                          <li><a href="/robot" >Robotics Lab (Mechatronics)</a> </li>
                                            
-                                          <li><a href="/automation" title="Jobs and Vacancies"> Industrial Automation Lab (SIEMENS LAB)</a> </li>
+                                          <li><a href="/automation" > Industrial Automation Lab (SIEMENS LAB)</a> </li>
                                            
-                                          <li><a href="/spare" title="Publications and Reports">Spare Parts Factory</a> </li>
+                                          <li><a href="/spare" >Spare Parts Factory</a> </li>
                                            
-                                          <li><a href="/biomedical" title="Tanzania This Week">Biomedical Engineering Skills Lab(BME-SL)</a> </li>
+                                          <li><a href="/biomedical" >Biomedical Engineering Skills Lab(BME-SL)</a> </li>
                                            
-                                          <li><a href="/4ir" title="Diaspora News">4IR-Lab and Phermatics Lab</a> </li>
+                                          <li><a href="/4ir" >4IR-Lab and Phermatics Lab</a> </li>
                                            
-                                          <li><a href="/hydraulic" title="Related Links"> Hydraulic Lab</a></li>
-                                          <li><a href="/energy"title="Photo Gallery"> Energy Audit Lab</a></li>
+                                          <li><a href="/hydraulic" > Hydraulic Lab</a></li>
+                                          <li><a href="/energy"> Energy Audit Lab</a></li>
                                           
                                        </ul>
                                     </li>
-                                    <li class="menu-item "> <a href="https://www.foreign.go.tz/eac">Product & Services <span class="icaret nav-plus fa fa-angle-down"></span></a>
+                                    <li class="menu-item "> <a href="#">Product & Services <span class="icaret nav-plus fa fa-angle-down"></span></a>
                                        <ul class="menu sub-menu">
                                            
                                           
-                                          <li class="menu-item"><a href="https://www.foreign.go.tz/eac/docs" title="EAC Documents">Products <span class="icaret nav-plus fa fa-angle-right"></span></a>
+                                          <li class="menu-item"><a href="#" title="EAC Documents">Products <span class="icaret nav-plus fa fa-angle-right"></span></a>
                                              <ul class="menu sub-menu">
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/acts-and-regulation" title="Acts and Regulation">Human Resource management system </a> </li>
+                                                <li><a href="#" title="Acts and Regulation">Human Resource management system </a> </li>
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/iec-materials" title="IEC Materials">Performance Appraisal and review system </a> </li>
+                                                <li><a href="#" title="IEC Materials">Performance Appraisal and review system </a> </li>
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/protocals" title="Protocals">Project management system </a> </li>
+                                                <li><a href="#" title="Protocals">Project management system </a> </li>
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/reports" title="Reports">Video conference application </a> </li>
+                                                <li><a href="#" title="Reports">Video conference application </a> </li>
                                                   
                                              </ul>
                                           </li>
                                              
-                                          <li class="menu-item"><a href="https://www.foreign.go.tz/eac/docs" title="EAC Documents">Services <span class="icaret nav-plus fa fa-angle-right"></span></a>
+                                          <li class="menu-item"><a href="#" title="EAC Documents">Services <span class="icaret nav-plus fa fa-angle-right"></span></a>
                                              <ul class="menu sub-menu">
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/acts-and-regulation" title="Acts and Regulation">Acts and Regulation </a> </li>
+                                                <li><a href="#" title="Acts and Regulation">Acts and Regulation </a> </li>
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/iec-materials" title="IEC Materials">IEC Materials </a> </li>
+                                                <li><a href="#" title="IEC Materials">IEC Materials </a> </li>
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/protocals" title="Protocals">Protocals </a> </li>
+                                                <li><a href="#" title="Protocals">Protocals </a> </li>
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/reports" title="Reports">Reports </a> </li>
+                                                <li><a href="#" title="Reports">Reports </a> </li>
                                                  
-                                                <li><a href="https://www.foreign.go.tz/eac/docs/category/treaties" title="Treaties">Treaties </a> </li>
+                                                <li><a href="#" title="Treaties">Treaties </a> </li>
                                                    
                                              </ul>
                                           </li> 

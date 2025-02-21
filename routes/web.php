@@ -55,3 +55,16 @@ Route::get('/energy', function () {
 Route::get('/automation', function () {
     return view('inovation/automation');
 });
+// for Research
+Route::get('/mechanical', function () {
+    return view('research/mechanical');
+});
+Route::get('/ict', function () {
+    return view('research/ict');
+});
+Route::get('/constractors', function () {
+    return view('research/constractor');
+});
+Route::get('/services', function () {
+    return view('research/service');
+});
