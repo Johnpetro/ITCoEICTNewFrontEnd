@@ -102,7 +102,7 @@
                               <div class="gva-navigation">
                                  <ul class="clearfix gva_menu gva_menu_main">
                                     <li class="menu-item is-active"> <a href="/"> Home </a></li>
-                                    <li class="menu-item "> <a href="https://www.foreign.go.tz/about"> About Us <span class="icaret nav-plus fa fa-angle-down"></span></a>
+                                    <li class="menu-item "> <a href="/about"> About Us <span class="icaret nav-plus fa fa-angle-down"></span></a>
                                         <!-- <ul class="menu sub-menu"> -->
 <!--                                            
                                           <li><a href="https://www.foreign.go.tz/about/category/about-us" title="Background">Background</a> </li>
@@ -138,31 +138,29 @@
                                            
                                           <li><a href="https://www.foreign.go.tz/eac/category/eac-facts-and-figures" title="EAC Facts and Figures">ICT</a> </li>
                                           
-                                             
-                                          <li class="menu-item"><a href="https://www.foreign.go.tz/eac/docs" title="EAC Documents">EAC Documents <span class="icaret nav-plus fa fa-angle-right"></span></a>
-                                          
+                                       
                                        </ul>
                                     </li>
 
-                                    <li class="menu-item "> <a href="https://www.foreign.go.tz/resources"> Innovation <span class="icaret nav-plus fa fa-angle-down"></span></a>
+                                    <li class="menu-item "> <a href="#"> Innovation <span class="icaret nav-plus fa fa-angle-down"></span></a>
                                        <ul class="menu sub-menu">
                                            
-                                          <li><a href="https://www.foreign.go.tz/resources/category/news-and-events" title="News and Events">Innovation Lab (Design studio Lab)</a> </li>
+                                          <li><a href="/innovation" title="News and Events">Innovation Lab (Design studio Lab)</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/resources/category/press-release" title="Press Release">Compressed Natural Gas Factory (CNG)</a> </li>
+                                          <li><a href="/cng" title="Press Release">Compressed Natural Gas Factory (CNG)</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/resources/category/statements-and-speech" title="Statements and Speech">Robotics Lab (Mechatronics)</a> </li>
+                                          <li><a href="/robot" title="Statements and Speech">Robotics Lab (Mechatronics)</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/resources/category/jobs-and-vacancies" title="Jobs and Vacancies"> Industrial Automation Lab (SIEMENS LAB)</a> </li>
+                                          <li><a href="/automation" title="Jobs and Vacancies"> Industrial Automation Lab (SIEMENS LAB)</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/resources/category/publications-and-reports" title="Publications and Reports">Spare Parts Factory</a> </li>
+                                          <li><a href="/spare" title="Publications and Reports">Spare Parts Factory</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/resources/category/tanzania-this-week" title="Tanzania This Week">Biomedical Engineering Skills Lab(BME-SL)</a> </li>
+                                          <li><a href="/biomedical" title="Tanzania This Week">Biomedical Engineering Skills Lab(BME-SL)</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/resources/category/diaspora-news" title="Diaspora News">4IR-Lab and Phermatics Lab</a> </li>
+                                          <li><a href="/4ir" title="Diaspora News">4IR-Lab and Phermatics Lab</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/resources/links" title="Related Links"> Hydraulic Lab</a></li>
-                                          <li><a href="https://www.foreign.go.tz/resources/gallery" title="Photo Gallery"> Energy Audit Lab</a></li>
+                                          <li><a href="/hydraulic" title="Related Links"> Hydraulic Lab</a></li>
+                                          <li><a href="/energy"title="Photo Gallery"> Energy Audit Lab</a></li>
                                           
                                        </ul>
                                     </li>
