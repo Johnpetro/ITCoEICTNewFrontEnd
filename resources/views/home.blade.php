@@ -28,8 +28,7 @@
                         <div class="swiper-slide text-center">
                             <img src="assets/images/picha.jpg" alt="Image" 
                                  class="radius " 
-                                 style="height: 500px; width: 95%; object-fit: cover; 
-                                        margin: auto; border-radius: 20px;"/>
+                                 style="height: 500px; width: 95%; object-fit: cover; margin: auto; border-radius: 20px;"/>
                         </div>
                     </div>
                 </div>
@@ -63,7 +62,7 @@
                                              function gtag(){dataLayer.push(arguments);}
                                              gtag('js', new Date());
 
-                                             gtag('config', 'G-ZF5GPY0HRB');
+                                             gtag('config', 'G-ZF5GPY0HRB'); 
                                              </script>
                                           <div class="node__content clearfix">
                                        <div property="schema:text" class="field field__item">

@@ -68,3 +68,20 @@ Route::get('/constractors', function () {
 Route::get('/services', function () {
     return view('research/service');
 });
+
+// for admini
+Route::get('/admin/dashboard', function () {
+    return view('admin.general.dashboard');
+});
+Route::get('/admin/post', function () {
+    return view('admin.general.table_post');
+});
+Route::get('/admin/add_post', function () {
+    return view('admin.general.dashboard');
+});
+Route::get('/admin/edit_post', function () {
+    return view('admin.general.dashboard');
+});
+Route::get('/admin/view_post', function () {
+    return view('admin.general.dashboard');
+});

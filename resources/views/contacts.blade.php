@@ -123,12 +123,5 @@
                   </div>
                </div>
             </div>
-            			   
-            
-            
-            
-            
-
-
 </main>
 @include('include.footer')
