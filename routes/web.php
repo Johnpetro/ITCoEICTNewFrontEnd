@@ -77,7 +77,7 @@ Route::get('/admin/post', function () {
     return view('admin.general.table_post');
 });
 Route::get('/admin/add_post', function () {
-    return view('admin.general.dashboard');
+    return view('admin.general.add_post');
 });
 Route::get('/admin/edit_post', function () {
     return view('admin.general.dashboard');
