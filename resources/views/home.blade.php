@@ -229,76 +229,24 @@
                         <div class="posts-list-number">
                            <div class="item-list">
                               <ul>
-                           
+                           @foreach ($news as $item)
                            <li class="view-list-item" >
                               <div class="views-field">
                                  <div class="field-content">
                                     <div class="post-block">
                                        <div class="post-content">
                                           <div class="number"> <i class="fa fa-file-text-o"></i></div>
-                                          <div class="post-title"> <a href="https://www.foreign.go.tz/resources/view/taarifa-kwa-umma." hreflang="en">Taarifa Kwa Umma</a>
-                                          <div class="post-meta"><span class="post-created">18 Jan 2025</span></div> </div>
+                                          <div class="post-title"><span class="gif" style="transform: rotateX('90');"> <img width="38" style="float: right; " src="{{ asset('new-gif/new-icon-gif-17.jpg') }}" alt=""> </span> <a href="#" hreflang="en"> {{ $item->title }}<br>
+                                          {{ $item->message }}     </a>
+                                          <div class="post-meta"><span class="post-created">{{ $item->date_posted}}</span></div> </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                            </li>
+                          @endforeach
                           
-                           <li class="view-list-item" >
-                              <div class="views-field">
-                                 <div class="field-content">
-                                    <div class="post-block">
-                                       <div class="post-content">
-                                          <div class="number"> <i class="fa fa-file-text-o"></i></div>
-                                          <div class="post-title"> <a href="https://www.foreign.go.tz/resources/view/foreign-affairs-bulletin-july" hreflang="en">FOREIGN AFFAIRS BULLETIN JULY</a>
-                                          <div class="post-meta"><span class="post-created">13 Nov 2024</span></div> </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </li>
                           
-                           <li class="view-list-item" >
-                              <div class="views-field">
-                                 <div class="field-content">
-                                    <div class="post-block">
-                                       <div class="post-content">
-                                          <div class="number"> <i class="fa fa-file-text-o"></i></div>
-                                          <div class="post-title"> <a href="https://www.foreign.go.tz/resources/view/mgombea-wa-nafasi-ya-mkurugenzi-wa-shirika-la-afya-dunia-kanda-ya-afrika-mhe-docfaustine" hreflang="en">Mgombea wa nafasi ya Mkurugenzi wa Shirika la Afya Dunia Kanda ya Afrika, Mhe.&nbsp; @DocFaustine</a>
-                                          <div class="post-meta"><span class="post-created">27 Aug 2024</span></div> </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </li>
-                          
-                           <li class="view-list-item" >
-                              <div class="views-field">
-                                 <div class="field-content">
-                                    <div class="post-block">
-                                       <div class="post-content">
-                                          <div class="number"> <i class="fa fa-file-text-o"></i></div>
-                                          <div class="post-title"> <a href="https://www.foreign.go.tz/resources/view/hotuba-ya-mheshimiwa-january-yusuf-makamba-mb-akiwasilisha-bungeni-makadirio-ya-mapato-na-matumizi-ya-wizara-kwa-mwaka-wa-fedha-2024-2025" hreflang="en">HOTUBA YA MHESHIMIWA JANUARY YUSUF MAKAMBA (MB.) AKIWASILISHA BUNGENI MAKADIRIO YA MAPATO NA MATUMIZI YA WIZARA KWA MWAKA WA FEDHA 2024/2025</a>
-                                          <div class="post-meta"><span class="post-created">28 May 2024</span></div> </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </li>
-                          
-                           <li class="view-list-item" >
-                              <div class="views-field">
-                                 <div class="field-content">
-                                    <div class="post-block">
-                                       <div class="post-content">
-                                          <div class="number"> <i class="fa fa-file-text-o"></i></div>
-                                          <div class="post-title"> <a href="https://www.foreign.go.tz/resources/view/waziri-mkuu-wa-jamhuri-ya-kidemokrasia-ya-shirikisho-la-ethiopia-mheshimiwa-dkt-abiy-ahmed-ali-kuwasili-nchini-kwa-ziara-ya-siku-tatu" hreflang="en">WAZIRI MKUU WA JAMHURI YA KIDEMOKRASIA YA SHIRIKISHO LA ETHIOPIA MHESHIMIWA DKT. ABIY AHMED ALI KUWASILI NCHINI KWA ZIARA YA SIKU TATU</a>
-                                          <div class="post-meta"><span class="post-created">27 Feb 2024</span></div> </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </li>
                           
                         </ul>
                            </div>

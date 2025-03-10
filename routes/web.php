@@ -5,9 +5,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'homeController@index');
 
 Route::get('/about', function () {
     return view('about');
@@ -85,3 +83,26 @@ Route::get('/admin/edit_post', function () {
 Route::get('/admin/view_post', function () {
     return view('admin.general.dashboard');
 });
+// Route::get('/admin/view_post', function () {
+//     return view('admin.general.dashboard');
+// });
+// start news
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ViewNewsController;
+//use App\Http\Controllers\homeController;
+
+//Route::get('home', [homeController::class, 'index'])->name('home');
+Route::get('/admin/news/create', [NewsController::class, 'create'])->name('news.create');
+Route::post('/admin/news', [NewsController::class, 'store'])->name('news.store');
+Route::get('/admin/news/view-news', [ViewNewsController::class, 'index'])->name('news.view-news');
+Route::get('/admin/news/edit-news?(:num)', [ViewNewsController::class, 'edit'])->name('news.edit-news?$1');
+///end news upload
+
+Route::get('', 'App\Http\Controllers\homeController@index');
+
+//Route::get('/admin/news/{id}/edit-news', [NewsController::class, 'edit'])->name('news.edit-news');
+Route::get('/news/{id}/edit', [NewsController::class, 'edit'])->name('news.edit');
+Route::get('/admin/news/{id}', [NewsController::class, 'show'])->name('news.show');
+Route::put('/admin/news/{id}', [NewsController::class, 'update'])->name('news.update');
+Route::delete('/admin/news/{id}', [NewsController::class, 'destroy'])->name('news.destroy');
+

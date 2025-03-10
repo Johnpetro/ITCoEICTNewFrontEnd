@@ -199,7 +199,7 @@
                                           </li> 
                                        </ul>
                                     </li>
-
+                                    <li class="menu-item "> <a href="/contacts"> HPC </a></li>
                                     <li class="menu-item "> <a href="/contacts"> Contact Us </a></li>
                                  </ul>
                               </div>
