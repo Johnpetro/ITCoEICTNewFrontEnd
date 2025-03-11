@@ -17,10 +17,13 @@ class AdminSeeder extends Seeder
         //
 
         User::create([
-            'name' => 'Admin User',  // If 'firstname' and 'lastname' are combined into 'name'
+            'firstname' => 'System',
+            'secondname' => 'Admin',
+            'lastname' => 'User',
             'email' => 'admin@example.com',
             'password' => Hash::make('admin123'),
-            'role' => 'admin',  // Ensure 'role' column exists
+            'gender' => 'male',
+            'role' => 'admin',  
         ]);
     }
 }

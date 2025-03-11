@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <style>
         /* Body and HTML Setup */
@@ -129,7 +129,7 @@
 
 <body>
     <div class="container">
-        <h2>Admin Login</h2>
+        <h2>Login Form</h2>
 
         <!-- Error Message Display -->
         @if (session('error'))
@@ -155,6 +155,8 @@
             </div>
             <button type="submit" class="btn">Login</button>
         </form>
+        <p>Don't have an account?</p>
+        <a href="{{ route('regForm') }}">Register</a>
     </div>
 </body>
 

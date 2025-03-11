@@ -39,7 +39,7 @@ class AuthController extends Controller
         if ($user->role === 'admin') {
             return redirect()->route('admin.general.dashboard');
         } elseif ($user->role === 'teacher') {
-            return redirect()->route('teacher.dashboard');
+            return redirect()->route('instructor.dashboard');
         } elseif ($user->role === 'student') {
             return redirect()->route('student.dashboard');
         }
@@ -63,11 +63,8 @@ class AuthController extends Controller
             'lastname' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' =>'required|string|confirmed|min:8',
-            'gender'=>'required|in:male,female,other',
-            'school'=>'required|in:jitegemee,kawawa',
-            'role' => 'required|in:teacher,student',
-            'class_id' => 'required_if:role,student|exists:school_classes,id'
-
+            'gender'=>'required|in:male,female',
+            'role' => 'required|in:instructor,student',
         ]);
 
 
@@ -78,20 +75,16 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'gender'=>$request->gender,
-            'school' => $request->school,
             'role' => $request->role,
-            'class_id'=>$request->class_id,
-
-            'status' => 'inactive' 
+            // 'status' => 'inactive' 
         ]);
 
-        return redirect()->route('loginForm')->with('success', 'Registration successful. Please wait for admin approval.');
+        return redirect()->route('loginForm')->with('success', 'Registration successful.');
     
     }
 
     public function logout(Request $request){
         $user = Auth::user();
-        $user->logout_at = now();
         $user->save();
         
         Auth::logout();

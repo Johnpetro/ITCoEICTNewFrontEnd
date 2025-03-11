@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ViewNewsController;
 //use App\Http\Controllers\homeController;
 
@@ -77,6 +79,15 @@ Route::get('/regForm', [AuthController::class,'regForm'])->name('regForm');
 Route::post('/register', [AuthController::class,'register'])->name('register');
 Route::post('/logout', [AuthController::class,'logout'])->name('logout');
 Route::get('/admin/dashboard', [AuthController::class,'admin'])->name('admin.general.dashboard');
+
+//student routes
+Route::get('/student/dashboard', [StudentController::class,'dashboard'])->name('student.dashboard');
+
+
+//instructor routes
+Route::get('/instructor/dashboard', [InstructorController::class,'dashboard'])->name('instructor.dashboard');
+
+
 // for admini
 Route::get('/admin/post', function () {
     return view('admin.general.table_post');
