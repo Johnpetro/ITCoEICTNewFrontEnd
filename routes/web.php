@@ -6,6 +6,10 @@ use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ViewNewsController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ServiceController;
+use App\Models\Product;
+use App\Models\Service;
 //use App\Http\Controllers\homeController;
 
 
@@ -109,6 +113,18 @@ Route::get('/mega_menu', function () {
 // Route::get('/admin/view_post', function () {
 //     return view('admin.general.dashboard');
 // });
+
+
+
+Route::prefix('admin')->group(function () {
+    //products
+    Route::resource('products', ProductController::class)->names('admin.products');
+    
+    //services
+    Route::resource('services', ServiceController::class)->names('admin.services');
+});
+
+
 
 
 

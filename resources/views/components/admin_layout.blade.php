@@ -4,7 +4,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="{{asset('images/dit_logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">DIT COMPANY</span>
+      <span class="brand-text font-weight-light">ITCoEICT</span>
     </a>
 
     <!-- Sidebar -->
@@ -14,9 +14,9 @@
         <div class="image">
             <img src="{{ asset('dist/img/avatar5.png') }}" class="img-circle elevation-2" alt="User Image">
         </div>
-        <div class="info">
+        <!-- <div class="info">
             <h2>some info</h2>
-        </div>
+        </div> -->
       </div>
 
       <!-- SidebarSearch Form -->
@@ -126,6 +126,32 @@
                   </ul>
                 </li>
               <!-----end news----->
+              <!---start Products and Services-->
+              <li class="nav-item has-treeview">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                     Product and Services
+                      <i class="fas fa-angle-left right"></i>
+                    </p>
+                  </a>
+                  <ul class="nav nav-treeview">
+                  
+                    <li class="nav-item">
+                      <a href="/admin/products" class="nav-link">
+                        <i class="nav-icon fas fa-box"></i>
+                        <p>Products</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/admin/services" class="nav-link">
+                        <i class="nav-icon fas fa-tools"></i>
+                        <p>Services</p>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                </li>
               </ul>
             </nav>
         </ul>
