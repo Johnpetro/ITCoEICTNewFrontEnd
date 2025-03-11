@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Storage;
 class NewsController extends Controller {
 
     // Show create news form
+    public function index() {
+        $news = News::latest()->paginate(4);
+        return view('admin.news.index', compact('news'));
+    }
     public function create() {
         return view('admin.news.create');
     }
@@ -16,27 +20,27 @@ class NewsController extends Controller {
     public function store(Request $request) {
         $request->validate([
             'title' => 'required|string|max:255',
-            'message' => 'required|string',
-            'date_posted' => 'required|date',
+            'description' => 'required|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'document' => 'nullable|mimes:pdf,doc,docx|max:5120'
+            'video_url' => 'nullable|url',
+            'published_at' => 'nullable|date'
         ]);
 
+        // Handle image upload
         $imagePath = $request->file('image') ? $request->file('image')->store('news_images', 'public') : null;
-        $documentPath = $request->file('document') ? $request->file('document')->store('news_documents', 'public') : null;
 
         News::create([
             'title' => $request->title,
-            'message' => $request->message,
-            'date_posted' => $request->date_posted,
+            'description' => $request->description,
             'image' => $imagePath,
-            'document' => $documentPath,
+            'video_url' => $request->video_url,
+            'published_at' => $request->published_at
         ]);
 
-        return redirect()->route('news.view-news')->with('success', 'News added successfully.');
+        return redirect()->route('news.index')->with('success', 'News added successfully.');
     }
 
-    //// Show edit form
+    // Show edit form
     public function edit($id) {
         $news = News::findOrFail($id);
         return view('admin.news.edit', compact('news'));
@@ -53,38 +57,28 @@ class NewsController extends Controller {
 
         $request->validate([
             'title' => 'required|string|max:255',
-            'message' => 'required|string',
-            'date_posted' => 'required|date',
+            'description' => 'required|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'document' => 'nullable|mimes:pdf,doc,docx|max:5120'
+            'video_url' => 'nullable|url',
+            'published_at' => 'nullable|date'
         ]);
 
-        
+        $news->title = $request->title;
+        $news->description = $request->description;
+        $news->video_url = $request->video_url;
+        $news->published_at = $request->published_at;
+
+        // Handle image upload
         if ($request->hasFile('image')) {
             if ($news->image) {
-                Storage::delete('public/' . $news->image); // Delete old image if exists
+                Storage::delete('public/' . $news->image); // Delete old image
             }
             $news->image = $request->file('image')->store('news_images', 'public');
         }
 
-        
-        if ($request->hasFile('document')) {
-            if ($news->document) {
-                Storage::delete('public/' . $news->document); // Delete old document if exists
-            }
-            $news->document = $request->file('document')->store('news_documents', 'public');
-        }
+        $news->save();
 
-        // Update news details
-        $news->update([
-            'title' => $request->title,
-            'message' => $request->message,
-            'date_posted' => $request->date_posted,
-            'image' => $news->image,
-            'document' => $news->document
-        ]);
-
-        return redirect()->route('news.view-news')->with('success', 'News updated successfully.');
+        return redirect()->route('news.index')->with('success', 'News updated successfully.');
     }
 
  
@@ -103,6 +97,6 @@ class NewsController extends Controller {
 
         $news->delete();
 
-        return redirect()->route('news.view-news')->with('success', 'News deleted successfully.');
+        return redirect()->route('news.index')->with('success', 'News deleted successfully.');
     }
 }

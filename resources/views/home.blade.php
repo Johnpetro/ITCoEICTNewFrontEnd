@@ -236,9 +236,9 @@
                                     <div class="post-block">
                                        <div class="post-content">
                                           <div class="number"> <i class="fa fa-file-text-o"></i></div>
-                                          <div class="post-title"><span class="gif" style="transform: rotateX('90');"> <img width="38" style="float: right; " src="{{ asset('new-gif/new-icon-gif-17.jpg') }}" alt=""> </span> <a href="#" hreflang="en"> {{ $item->title }}<br>
-                                          {{ $item->message }}     </a>
-                                          <div class="post-meta"><span class="post-created">{{ $item->date_posted}}</span></div> </div>
+                                          <div class="post-title"><span class="gif" style="transform: rotateX('90');"> <img width="38" style="float: right; " src="{{ asset('new-gif/new-icon-gif-17.jpg') }}" alt=""> 
+                                       </span> <a href="{{ route('view-news', $item->id) }}" hreflang="en"> {{ $item->title }} </a>
+                                          <div class="post-meta"><span class="post-created">{{ $item->created_at}}</span></div> </div>
                                        </div>
                                     </div>
                                  </div>
@@ -258,7 +258,15 @@
                </div>
             </div>
          </div>
+<!-- new events and comments modified-->
+         <div class="gsc-column col-lg-3 col-md-3 col-xs-12">
+            <div class="column-inner bg-size-cover">
+            </div>
+          </div>
+          
          
+         </div>
+<!----  end---->
          </div>
             </div>
                </div>

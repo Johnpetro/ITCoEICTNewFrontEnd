@@ -13,5 +13,10 @@ class homeController extends Controller
         $news = News::all();
         return view('home', compact('news'));
     }
+
+    public function view($id){
+        $news = News::findOrFail($id);
+        return view('view-news', compact('news'));
+    }
 }
 

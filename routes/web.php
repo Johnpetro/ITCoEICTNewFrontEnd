@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< Updated upstream
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\NewsController;
@@ -20,6 +21,12 @@ use App\Http\Controllers\MessageController;
 //     return view('welcome');
 // });
 
+=======
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+>>>>>>> Stashed changes
 Route::get('/', 'homeController@index');
 
 //messages
@@ -51,6 +58,8 @@ Route::get('/allPageLayout', function () {
     return view('allPageLayout');
 });
 
+
+///////////////////////////////////////////////////////////////////////
 Route::get('/innovation', function () {
     return view('inovation/innovation');
 });
@@ -100,6 +109,7 @@ Route::get('/services', function () {
     return view('research/service');
 });
 
+<<<<<<< Updated upstream
 
 //authentication routes
 Route::get('/loginForm', [AuthController::class,'loginForm'])->name('loginForm');
@@ -117,7 +127,12 @@ Route::get('/student/dashboard', [StudentController::class,'dashboard'])->name('
 Route::get('/instructor/dashboard', [InstructorController::class,'dashboard'])->name('instructor.dashboard');
 
 
+=======
+>>>>>>> Stashed changes
 // for admini
+Route::get('/admin/dashboard', function () {
+    return view('admin.general.dashboard');
+});
 Route::get('/admin/post', function () {
     return view('admin.general.table_post');
 });
@@ -138,6 +153,7 @@ Route::get('/mega_menu', function () {
 // Route::get('/admin/view_post', function () {
 //     return view('admin.general.dashboard');
 // });
+<<<<<<< Updated upstream
 
 
 
@@ -154,8 +170,17 @@ Route::prefix('admin')->group(function () {
 
 
 Route::get('home', [homeController::class, 'index'])->name('home');
+=======
+// start news
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ViewNewsController;
+use App\Http\Controllers\homeController;
+Route::get('view-news/{id}', [homeController::class, 'view'])->name('view-news');
+//Route::get('home', [homeController::class, 'index'])->name('home');
+>>>>>>> Stashed changes
 Route::get('/admin/news/create', [NewsController::class, 'create'])->name('news.create');
 Route::post('/admin/news', [NewsController::class, 'store'])->name('news.store');
+Route::get('/admin/news/index', [NewsController::class, 'index'])->name('news.index');
 Route::get('/admin/news/view-news', [ViewNewsController::class, 'index'])->name('news.view-news');
 Route::get('/admin/news/edit-news?(:num)', [ViewNewsController::class, 'edit'])->name('news.edit-news?$1');
 ///end news upload

@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('message');
-            $table->date('date_posted');
-            $table->string('image')->nullable();
-            $table->string('document')->nullable();
+            $table->string('title')->after('id');
+            $table->text('description')->after('title');
+            $table->string('image')->nullable()->after('description'); // Store image path
+            $table->string('video_url')->nullable()->after('image');
+            $table->timestamp('published_at')->nullable()->after('video_url');
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ class News extends Model {
    
     use HasFactory; 
     protected $table ='news';
-    protected $fillable =['title','message','date_posted','image','document'];
+    protected $fillable = ['title', 'description', 'image', 'video_url', 'published_at'];
 
 
 }

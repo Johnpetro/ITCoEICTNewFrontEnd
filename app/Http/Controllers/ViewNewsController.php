@@ -11,11 +11,11 @@ class ViewNewsController extends Controller
 {
     public function index(){
         $news = News::all();
-        return view('admin.news.view-news', compact('news'));
+        return view('news.view-news', compact('news'));
     }
 
-    public function edit($id = ''){
-        $news = News::all($id);
-        return view('admin.news.edit-news?$id', compact('news'));
-    }
+    // public function edit($id = ''){
+    //     $news = News::all($id);
+    //     return view('news.edit-news?$id', compact('news'));
+    // }
 }
