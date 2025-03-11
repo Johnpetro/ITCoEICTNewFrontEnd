@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +23,53 @@
 	
 	<link href="assets/images/faviconi.png" rel="icon" type="image/png" />
   	<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" /><![endif]-->
+     <style>
+.mega-menu {
+   position: relative;
+}
+
+.mega-menu-content {
+   display: none;
+   position: absolute;
+   left: -110%;
+   top: 100%;
+   width: 100%;
+   background: #e6e6e6;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   z-index: 1000;
+   border-radius: 5px;
+}
+
+.mega-menu:hover .mega-menu-content {
+   display: block;
+}
+
+.mega-menu .containe {
+   padding: 20px;
+}
+
+.mega-menu .menu.sub-menu {
+   list-style: none;
+   padding: 0;
+}
+
+.mega-menu .menu.sub-menu li {
+   margin-bottom: 10px;
+}
+
+.sub  a {
+   color: #333;
+   text-decoration: none;
+   font-size: 15px;
+    padding: 4px 12px;
+    display: block;
+
+}
+
+.mega-menu .menu.sub-menu li a:hover {
+   text-decoration: underline;
+}
+</style>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -116,13 +162,34 @@
                                        <!-- </ul> --> 
                                     </li>
 
-                                    <li class="menu-item "> <a href="https://www.foreign.go.tz/services">Professional Short courses<span class="icaret nav-plus fa fa-angle-down"></span></a>
-                                       <ul class="menu sub-menu">
-                                           
-                                          <li><a href="#" title="Services for Tanzanians">Research </li>
-            
-                                          <li><a href="#" title="Services for Diplomats">Innovation</a> </li>  
-                                       </ul>
+                                    <li class="menu-item mega-menu"> <a href="https://www.foreign.go.tz/services">Professional Short courses</a>
+                                          <div class="mega-menu-content" style="width: 80vw !important;">
+                                            <div class="containe">
+                                             <h2 class=" text-uppercase display-6 p-2 bd-highlight">available courses</h2>
+                                              <div class="row p-5 sub">
+                                                <div class="col-md-4 d-flex flex-column bd-highlight mb-3">
+                                                   <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero numquam accusamus consequuntur quas iure, iusto labore cupiditate temporibus quam porro excepturi debitis neque rerum? Molestias doloremque impedit repellat animi molestiae.</p> -->
+                                                   <a href="/mega_menu" class="text-uppercase display-6 p-2 bd-highlight">Software development course</a><br>
+                                                   <a href="/mega_menu" class="text-uppercase  p-2 bd-highlight">communication,network security& system adminstration course</a><br>
+                                                   <a href="/mega_menu" class="text-uppercase p-2 bd-highlight ">nation vocation awards programs</a><br>
+                                                   <a href="/mega_menu" class="text-uppercase  p-2 bd-highlight">emerging techologies course</a><br>
+                                                  
+                                                </div>
+                                                <div class="col-md-4 d-flex">
+                                                <a href="/mega_menu" class="text-uppercase ">computer aided design and manufacturing</a><br>
+                                                   <a href="/mega_menu" class="text-uppercase ">hardware repair and maintainence course</a><br>
+                                                   <a href="/mega_menu" class="text-uppercase ">ict secretarial course</a><br>
+                                                   <a href="/mega_menu" class="text-uppercase ">management and computer courses</a><br>
+                                                   
+                                             </div>
+                                                <div class="col-md-4">
+                                                   <a href="/mega_menu" class="text-uppercase ">multimedia & film technology course</a><br>
+                                                   <a href="/mega_menu" class="text-uppercase ">internation certification course programs</a><br>
+                                                   <a href="/mega_menu" class="text-uppercase display-6 h3">other courses</a>  <br>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </li>
 
                                    
@@ -253,3 +320,5 @@
       </div>
    </div>
 </header>
+
+

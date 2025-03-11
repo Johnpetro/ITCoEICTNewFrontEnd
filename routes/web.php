@@ -90,6 +90,11 @@ Route::get('/admin/edit_post', function () {
 Route::get('/admin/view_post', function () {
     return view('admin.general.dashboard');
 });
+
+//mega menu
+Route::get('/mega_menu', function () {
+    return view('short_course/software');
+});
 // Route::get('/admin/view_post', function () {
 //     return view('admin.general.dashboard');
 // });
