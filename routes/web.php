@@ -1,12 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< Updated upstream
+use App\Http\Controllers\ViewNewsController;
+use App\Http\Controllers\homeController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\StudentController;
-use App\Http\Controllers\ViewNewsController;
+
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
 use App\Models\Product;
@@ -15,18 +16,18 @@ use App\Models\Service;
 
 
 
-use App\Http\Controllers\homeController;
+
 use App\Http\Controllers\MessageController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
-=======
+
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
->>>>>>> Stashed changes
+
 Route::get('/', 'homeController@index');
 
 //messages
@@ -109,26 +110,6 @@ Route::get('/services', function () {
     return view('research/service');
 });
 
-<<<<<<< Updated upstream
-
-//authentication routes
-Route::get('/loginForm', [AuthController::class,'loginForm'])->name('loginForm');
-Route::post('/login', [AuthController::class,'login'])->name('login');
-Route::get('/regForm', [AuthController::class,'regForm'])->name('regForm');
-Route::post('/register', [AuthController::class,'register'])->name('register');
-Route::post('/logout', [AuthController::class,'logout'])->name('logout');
-Route::get('/admin/dashboard', [AuthController::class,'admin'])->name('admin.general.dashboard');
-
-//student routes
-Route::get('/student/dashboard', [StudentController::class,'dashboard'])->name('student.dashboard');
-
-
-//instructor routes
-Route::get('/instructor/dashboard', [InstructorController::class,'dashboard'])->name('instructor.dashboard');
-
-
-=======
->>>>>>> Stashed changes
 // for admini
 Route::get('/admin/dashboard', function () {
     return view('admin.general.dashboard');
@@ -153,7 +134,7 @@ Route::get('/mega_menu', function () {
 // Route::get('/admin/view_post', function () {
 //     return view('admin.general.dashboard');
 // });
-<<<<<<< Updated upstream
+
 
 
 
@@ -169,15 +150,15 @@ Route::prefix('admin')->group(function () {
 
 
 
-Route::get('home', [homeController::class, 'index'])->name('home');
-=======
+
+
 // start news
-use App\Http\Controllers\NewsController;
-use App\Http\Controllers\ViewNewsController;
-use App\Http\Controllers\homeController;
+
+
+Route::get('home', [homeController::class, 'index'])->name('home');
 Route::get('view-news/{id}', [homeController::class, 'view'])->name('view-news');
 //Route::get('home', [homeController::class, 'index'])->name('home');
->>>>>>> Stashed changes
+
 Route::get('/admin/news/create', [NewsController::class, 'create'])->name('news.create');
 Route::post('/admin/news', [NewsController::class, 'store'])->name('news.store');
 Route::get('/admin/news/index', [NewsController::class, 'index'])->name('news.index');
