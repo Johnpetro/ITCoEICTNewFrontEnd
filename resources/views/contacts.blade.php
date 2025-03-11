@@ -38,66 +38,53 @@
                                     </h1>
                                     <div class="block block-system main-content-block no-title">
                                        <div class="content block-content margin-bottom-20">
-                                       	<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15866.470622588395!2d35.747874305015635!3d-6.181899769640227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swizara%20ya%20kilimo%2C%20dodoma!5e0!3m2!1ssw!2stz!4v1646934227297!5m2!1ssw!2stz" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                       	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6297572220824!2d39.277447674756026!3d-6.814807093182818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b09e848c92d%3A0x90d02db3c3d6c912!2sDar%20es%20Salaam%20Institute%20of%20Technology!5e0!3m2!1sen!2stz!4v1738847605418!5m2!1sen!2stz"  width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
    													<h2 class="page-title">
                                  			<span property="schema:name">Feedback and Enquiries</span>
                                				</h2>
-                                        <p>We are glad to receive your comments, and will respond to any enquiries you may have. Please enter your details together with your comment or enquiry.</p>
-                                     		<form id="contact_form" class="contact_form" method="post" action="https://www.foreign.go.tz/"  >
-                                                <div class='hiddenFields'>
-                                                <input type="hidden" name="ACT" value="5" />
-                                                <input type="hidden" name="RET" value="contacts" />
-                                                <input type="hidden" name="URI" value="contacts" />
-                                                <input type="hidden" name="PRV" value="" />
-                                                <input type="hidden" name="recipients" value="W/Yuc3gwZPTZ0RwCdVgOQWrS8UJL1A2gyJMozP6zkbQ=" />
-                                                <input type="hidden" name="user_recipients" value="35RolXKz2LoulJAvAfwlcp1nuvaKTSEzxM9VuafTGVQ=" />
-                                                <input type="hidden" name="charset" value="utf-8" />
-                                                <input type="hidden" name="allow_attachments" value="h2jIvKO7UBeBZP9bXsgOZPP6GSywgt1T6Q1hAIbML9qWhtgKyb+ZX7yt8p3KV5UF" />
-                                                <input type="hidden" name="redirect" value="" />
-                                                <input type="hidden" name="replyto" value="" />
-                                                <input type="hidden" name="markdown" value="Y/gSYtdRZ/niAxaRPHBYKQcEKLQERaKS6LKQ28bIscg=" />
-                                                <input type="hidden" name="site_id" value="1" />
-                                                <input type="hidden" name="csrf_token" value="de19143a9891f70e01abe65dd7b4281fba6964b9" />
-                                                </div>
+                                           <p>We are glad to receive your comments and will respond to any inquiries you may have. Please enter your details together with your comment or inquiry.</p>
 
-
-                                          <div class="row">
-                                             <div class="col-sm-6">
-                                                <div class="form-group">
-                                                   <label for="name">Name*</label>
-                                                   <input type="text" class="form-control" id="name" name="name" placeholder="Name*" required="required">
-                                                </div>
+                                           <form id="contact_form" class="contact_form" method="POST" action="{{ route('send.message') }}">
+                                             @csrf
+                                             <div class="row">
+                                                 <div class="col-sm-6">
+                                                     <div class="form-group">
+                                                         <label for="name">Name*</label>
+                                                         <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                                                     </div>
+                                                 </div>
+                                                 <div class="col-sm-6">
+                                                     <div class="form-group">
+                                                         <label for="email">Email*</label>
+                                                         <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                                                     </div>
+                                                 </div>
+                                                 <div class="col-sm-6">
+                                                     <div class="form-group">
+                                                         <label for="subject">Subject*</label>
+                                                         <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required>
+                                                     </div>
+                                                 </div>
+                                                 <div class="col-sm-6">
+                                                     <div class="form-group">
+                                                         <label for="phone">Phone</label>
+                                                         <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone number">
+                                                     </div>
+                                                 </div>
                                              </div>
-                                             <div class="col-sm-6">
-                                                <label for="email">Email*</label>
-                                                <div class="form-group">
-                                                   <input type="text" class="form-control" id="email" name="from" placeholder="Email" required="required">
-                                                </div>
+                                         
+                                             <div class="form-group">
+                                                 <label for="message">Message*</label>
+                                                 <textarea class="form-control" id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
                                              </div>
-                                             <div class="col-sm-6">
-                                                <label for="email">Subject</label>
-                                                <div class="form-group">
-                                                   <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required="required">
-                                                </div>
+                                         
+                                             <div class="row">
+                                                 <div class="col-md-6">
+                                                     <button type="submit" class="btn btn-primary">Send Message</button>
+                                                 </div>
                                              </div>
-                                             <div class="col-sm-6">
-                                                <div class="form-group">
-                                                   <label for="phone">Phone</label>
-                                                   <input type="text" class="form-control" id="phone" name="message[]" placeholder="Phone">
-                                                </div>
-                                             </div>
-                                         </div>
-                                         <div class="form-group">
-                                             <label for="message">Message</label>
-                                             <textarea class="form-control" id="message" name="message" placeholder="Message*" rows="5"></textarea>
-                                         </div>
-                                         <div class="row">                                        
-                                         <div class="col-md-6">
-                                             <button type="submit" class="btn btn-news"> Send Message
-                                             </button>
-                                         </div>
-                                     </div>
-                                     </form>
+                                         </form>
+                                         
                                      </div>
                                     </div>
                                  </div>
@@ -110,7 +97,7 @@
                                     	<h2 class="block-title"><span>Contact Details</span></h2>
                                        <div class="field field__item">
                                           <div class="contact-info-page margin-top-20">
-                                              <p><strong>Physical Location and Offices</strong><br>Ministry of Foreign Affairs and East African Cooperation,<br><i>LAPF Building 6th Floor</i><br>Makole Road,<br>40466 &nbsp;Dodoma, Tanzania.</p><p><strong>Postal Address</strong><br>Ministry of Foreign Affairs and East African Cooperation,&nbsp;<br>P.O. Box 2933, &nbsp;Dodoma, Tanzania.&nbsp;</p><p><strong>Telephone Contacts</strong><br><strong>Phone</strong>: :+255-26- 2323201-7<br><strong>Fax</strong>: +255-26-2323208</p><p><strong>E-mail</strong>: nje@nje.go.tz or dodoma@nje.go.tz</p> 
+                                              <p><strong>Physical Location and Offices</strong><br>Dar Es Salaam Institute Of Technology(DIT),<br>Bibititi and Morogoro Rd Junction,<br>2958 &nbsp;Dar-es-salaam, Tanzania.</p><p><strong>Postal Address</strong><br>Bibititi and Morogoro Rd Junction,&nbsp;<br>P.O. Box 2958, &nbsp;Dar-es-salaam, Tanzania.&nbsp;</p><p><strong>Telephone Contacts</strong><br><strong>Phone</strong>: :+255 22 2150174<br><strong>Fax</strong>: +255 22 2152504</p><p><strong>E-mail</strong>: dg@company.dit.ac.tz</p> 
                   									
                                           </div>
                                        </div>

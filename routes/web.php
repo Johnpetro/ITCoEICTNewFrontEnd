@@ -13,10 +13,35 @@ use App\Models\Service;
 //use App\Http\Controllers\homeController;
 
 
+
+use App\Http\Controllers\homeController;
+use App\Http\Controllers\MessageController;
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', 'homeController@index');
 
-Route::get('/about', function () {
-    return view('about');
+//messages
+Route::post('/send-message', [MessageController::class, 'store'])->name('send.message');
+
+Route::get('/admin/messages', [MessageController::class, 'index']);
+Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
+
+
+//about
+// about us
+Route::get('/about/background', function () {
+    return view('about.background');
+});
+Route::get('/about/vission', function () {
+    return view('about.vission');
+});
+Route::get('/about/core', function () {
+    return view('about.core');
+});
+Route::get('/about/boardmembers', function () {
+    return view('about.boardmembers');
 });
 Route::get('/contacts', function () {
     return view('contacts');
@@ -128,7 +153,7 @@ Route::prefix('admin')->group(function () {
 
 
 
-//Route::get('home', [homeController::class, 'index'])->name('home');
+Route::get('home', [homeController::class, 'index'])->name('home');
 Route::get('/admin/news/create', [NewsController::class, 'create'])->name('news.create');
 Route::post('/admin/news', [NewsController::class, 'store'])->name('news.store');
 Route::get('/admin/news/view-news', [ViewNewsController::class, 'index'])->name('news.view-news');

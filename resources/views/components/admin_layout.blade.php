@@ -100,6 +100,26 @@
                     </li>
                   </ul>
                 </li>
+
+                <!--messages-->
+
+              <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-comments"></i>
+                      <p>
+                        Users Messages
+                        <i class="fas fa-angle-left right"></i>
+                      </p>
+                    </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="/admin/messages" class="nav-link">
+                        <i class="nav-icon fas fa-envelope"></i>
+                        <p>Messages</p>
+                      </a>
+                  </li>
+                </ul>
+            </li>
               <!---news--->
               <li class="nav-item has-treeview">
                   <a href="#" class="nav-link">

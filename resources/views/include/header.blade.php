@@ -149,17 +149,20 @@
                                  <ul class="clearfix gva_menu gva_menu_main">
                                     <li class="menu-item is-active"> <a href="/"> Home </a></li>
                                     <li class="menu-item "> <a href="/about"> About Us <span class="icaret nav-plus fa fa-angle-down"></span></a>
-                                        <!-- <ul class="menu sub-menu"> -->
-<!--                                            
-                                          <li><a href="https://www.foreign.go.tz/about/category/about-us" title="Background">Background</a> </li>
+                                        <ul class="menu sub-menu">
+                                        
+                                          <li><a href="about/background" title="Background">Background</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/about/category/foreign-policy" title="Vision and Mission">Vision and Mission</a> </li>
+                                          <li><a href="about/vission" title="Vision and Mission">Vision and Mission</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/about/category/departments-and-units" title="Board Memberss">Board Members</a> </li>
+                                          <li><a href="about/boardmembers" title="Board Memberss">Board Members</a> </li>
                                            
-                                          <li><a href="https://www.foreign.go.tz/about/category/faq" title="Core Values">Core Values</a> </li> -->
+                                          <li><a href="about/core" title="Core Values">Core Values</a> </li> 
+
+                                          <li><a href="contacts" title="Core Values">Contact Us</a> </li> 
                                             
-                                       <!-- </ul> --> 
+                                            
+                                       </ul> 
                                     </li>
 
                                     <li class="menu-item mega-menu"> <a href="https://www.foreign.go.tz/services">Professional Short courses</a>
