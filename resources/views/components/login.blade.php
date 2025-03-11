@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <style>
         /* Body and HTML Setup */
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             font-family: 'Arial', sans-serif;
@@ -96,6 +98,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -123,6 +126,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h2>Admin Login</h2>
@@ -133,18 +137,25 @@
         @endif
 
         <!-- Login Form -->
-        <form action="{{ route('admin.login.submit') }}" method="POST">
+        <form action="{{ route('login') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" class="form-control" required>
+                @error('email')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" name="password" id="password" class="form-control" required>
+                @error('password')
+                    <span class="text-danger">{{ $message }}</span>
+                @enderror
             </div>
             <button type="submit" class="btn">Login</button>
         </form>
     </div>
 </body>
+
 </html>

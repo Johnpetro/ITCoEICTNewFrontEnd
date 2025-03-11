@@ -1,10 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ViewNewsController;
+//use App\Http\Controllers\homeController;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 Route::get('/', 'homeController@index');
 
 Route::get('/about', function () {
@@ -17,7 +19,7 @@ Route::get('/contacts', function () {
 Route::get('/allPageLayout', function () {
     return view('allPageLayout');
 });
-///////////////////////////////////////////////////////////////////////
+
 Route::get('/innovation', function () {
     return view('inovation/innovation');
 });
@@ -67,10 +69,15 @@ Route::get('/services', function () {
     return view('research/service');
 });
 
+
+//authentication routes
+Route::get('/loginForm', [AuthController::class,'loginForm'])->name('loginForm');
+Route::post('/login', [AuthController::class,'login'])->name('login');
+Route::get('/regForm', [AuthController::class,'regForm'])->name('regForm');
+Route::post('/register', [AuthController::class,'register'])->name('register');
+Route::post('/logout', [AuthController::class,'logout'])->name('logout');
+Route::get('/admin/dashboard', [AuthController::class,'admin'])->name('admin.general.dashboard');
 // for admini
-Route::get('/admin/dashboard', function () {
-    return view('admin.general.dashboard');
-});
 Route::get('/admin/post', function () {
     return view('admin.general.table_post');
 });
@@ -86,10 +93,8 @@ Route::get('/admin/view_post', function () {
 // Route::get('/admin/view_post', function () {
 //     return view('admin.general.dashboard');
 // });
-// start news
-use App\Http\Controllers\NewsController;
-use App\Http\Controllers\ViewNewsController;
-//use App\Http\Controllers\homeController;
+
+
 
 //Route::get('home', [homeController::class, 'index'])->name('home');
 Route::get('/admin/news/create', [NewsController::class, 'create'])->name('news.create');
