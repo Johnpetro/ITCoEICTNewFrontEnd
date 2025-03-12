@@ -21,7 +21,7 @@ use App\Http\Controllers\MessageController;
 // });
 
 Route::get('/', 'homeController@index');
-
+//Maryam
 //messages
 Route::post('/send-message', [MessageController::class, 'store'])->name('send.message');
 
@@ -46,6 +46,8 @@ Route::get('/about/boardmembers', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
+
+//Maryam
 
 Route::get('/allPageLayout', function () {
     return view('allPageLayout');
