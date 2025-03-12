@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InstructorController;
 use App\Http\Controllers\NewsController;
@@ -11,17 +12,17 @@ use App\Http\Controllers\ServiceController;
 use App\Models\Product;
 use App\Models\Service;
 //use App\Http\Controllers\homeController;
-
-
-
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\MessageController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
+
 Route::get('/', 'homeController@index');
 //Maryam
+
+
 //messages
 Route::post('/send-message', [MessageController::class, 'store'])->name('send.message');
 
@@ -140,6 +141,7 @@ Route::get('/mega_menu', function () {
 // Route::get('/admin/view_post', function () {
 //     return view('admin.general.dashboard');
 // });
+
 
 
 
