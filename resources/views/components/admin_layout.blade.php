@@ -1,4 +1,3 @@
-
 @include('components.nav')
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -88,13 +87,13 @@
                   </a>
                   <ul class="nav nav-treeview">
                     <li class="nav-item">
-                      <a href="{{ route('news.index')}}" class="nav-link">
+                      <a href="{{ route('news.create')}}" class="nav-link">
                         <i class="fas fa-newspaper"></i>
                         <p>upload News</p>
                       </a>
                    </li>
                     <li class="nav-item">
-                      <a href="{{ route('news.index')}}" class="nav-link">
+                      <a href="{{ route('news.view-news')}}" class="nav-link">
                         <i class="nav-icon far fa-circle"></i>
                         <p>View News</p>
                       </a>
@@ -139,7 +138,3 @@
         @yield('body')
   </div>
 </div>
-
-
-
-
