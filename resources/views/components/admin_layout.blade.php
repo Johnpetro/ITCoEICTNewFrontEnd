@@ -49,53 +49,10 @@
                     </p>
                   </a>
                   <ul class="nav nav-treeview">
-                  
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>Leaders</p>
-                      </a>
-                    </li>
                     <li class="nav-item">
                       <a href="/admin/post" class="nav-link">
                         <i class="nav-icon fas fa-images"></i>
                         <p>post</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-circle"></i>
-                        <p>Dashboard v3</p>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item has-treeview">
-                  <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-building"></i>
-                    <p>
-                      Company Items
-                      <i class="fas fa-angle-left right"></i>
-                    </p>
-                  </a>
-                  <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">
-                        <i class="fas fa-building nav-icon"></i>
-                        <p>Company</p>
-                      </a>
-                   </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-circle"></i>
-                        <p>Dashboard v2</p>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-circle"></i>
-                        <p>Dashboard v3</p>
                       </a>
                     </li>
                   </ul>

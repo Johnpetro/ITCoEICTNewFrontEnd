@@ -28,17 +28,15 @@ use App\Http\Controllers\MessageController;
 //     return view('welcome');
 // });
 
-Route::get('/', 'homeController@index');
+Route::get('/', [homeController::class, 'index'])->name('home');
 
 //messages
 Route::post('/send-message', [MessageController::class, 'store'])->name('send.message');
 
-Route::get('/admin/messages', [MessageController::class, 'index']);
 Route::delete('/messages/{id}', [MessageController::class, 'destroy'])->name('messages.destroy');
 
 
 //about
-// about us
 Route::get('/about/background', function () {
     return view('about.background');
 });
@@ -54,6 +52,8 @@ Route::get('/about/boardmembers', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 });
+//about ends here
+
 
 Route::get('/allPageLayout', function () {
     return view('allPageLayout');
